@@ -2,9 +2,10 @@ package Bundle::W3C::Validator;
 
 use 5.008;
 use strict;
+use warnings;
 
 use vars qw($VERSION);
-$VERSION = '0.8.5';
+$VERSION = '0.8.6';
 
 1;
 
@@ -22,7 +23,7 @@ C<perl -MCPAN -e "install Bundle::W3C::Validator">
 
  CGI 2.81
  CGI::Carp
- Config::General 2.31
+ Config::General 2.32
  Encode
  Encode::Alias
  Encode::HanExtra
@@ -34,18 +35,18 @@ C<perl -MCPAN -e "install Bundle::W3C::Validator">
  HTML::Tidy - (optional)
  HTTP::Headers::Auth
  HTTP::Headers::Util
- HTTP::Message
+ HTTP::Message 1.52
  HTTP::Negotiate
  HTTP::Request
+ JSON 2.00
  LWP::UserAgent 2.032
  Net::IP
  Net::hostent
- SGML::Parser::OpenSP
+ SGML::Parser::OpenSP 0.991
  Socket
- String::Approx
  URI
  URI::Escape
- XML::LibXML
+ XML::LibXML 1.56
 
 =head1 DESCRIPTION
 
@@ -63,7 +64,7 @@ W3C QA-dev Team, E<lt>public-qa-dev@w3.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 1994-2009 World Wide Web Consortium, (Massachusetts
+Copyright (C) 1994-2010 World Wide Web Consortium, (Massachusetts
 Institute of Technology, European Research Consortium for Informatics
 and Mathematics, Keio University). All Rights Reserved. This work is
 distributed under the W3C(R) Software License [1] in the hope that it

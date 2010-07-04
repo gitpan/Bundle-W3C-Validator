@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 use vars qw($VERSION);
-$VERSION = '0.8.6';
+$VERSION = '1.0';
 
 1;
 
@@ -23,6 +23,7 @@ C<perl -MCPAN -e "install Bundle::W3C::Validator">
 
  CGI 2.81
  CGI::Carp
+ Config
  Config::General 2.32
  Encode
  Encode::Alias
@@ -30,6 +31,7 @@ C<perl -MCPAN -e "install Bundle::W3C::Validator">
  Encode::JIS2K - (optional)
  File::Spec::Functions
  HTML::Encoding 0.52
+ HTML::HeadParser 3.60
  HTML::Parser 3.24
  HTML::Template 2.6
  HTML::Tidy - (optional)
@@ -46,16 +48,18 @@ C<perl -MCPAN -e "install Bundle::W3C::Validator">
  Socket
  URI
  URI::Escape
- XML::LibXML 1.56
+ URI::file
+ XML::LibXML 1.70
 
 =head1 DESCRIPTION
 
 This bundle contains the prerequisite CPAN modules for running the
-W3C Markup Validator, E<lt>http://validator.w3.org/E<gt>.
+W3C Markup Validator, L<http://validator.w3.org/>.
 
 =head1 SEE ALSO
 
-E<lt>http://validator.w3.org/E<gt>
+L<http://validator.w3.org/>
+
 perl(1)
 
 =head1 AUTHOR
@@ -71,6 +75,6 @@ distributed under the W3C(R) Software License [1] in the hope that it
 will be useful, but WITHOUT ANY WARRANTY; without even the implied
 warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-[1] http://www.w3.org/Consortium/Legal/copyright-software
+[1] L<http://www.w3.org/Consortium/Legal/copyright-software>
 
 =cut

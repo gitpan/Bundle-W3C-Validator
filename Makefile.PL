@@ -15,12 +15,14 @@ WriteMakefile(
         # Hard dependencies:
         "CGI"                   => 2.81,
         "CGI::Carp"             => 0,
+        "Config"                => 0,
         "Config::General"       => 2.32,
         "Encode"                => 0,
         "Encode::Alias"         => 0,
         "Encode::HanExtra"      => 0,
         "File::Spec::Functions" => 0,
         "HTML::Encoding"        => 0.52,
+        "HTML::HeadParser"      => "3.60",
         "HTML::Parser"          => 3.24,
         "HTML::Template"        => 2.6,
         "HTTP::Headers::Auth"   => 0,
@@ -36,23 +38,23 @@ WriteMakefile(
         "Socket"                => 0,
         "URI"                   => 0,
         "URI::Escape"           => 0,
-        "XML::LibXML"           => 1.56,
+        "URI::file"             => 0,
+        "XML::LibXML"           => "1.70",
 
         # Optional:
         "Encode::JIS2K" => 0,
         "HTML::Tidy"    => 0,
     },
-    depend => {distdir  => 'ChangeLog'},
-    dist   => {TARFLAGS => '--owner=0 --group=0 -cvf'},
-    clean  => {FILES    => 'ChangeLog.bak'},
-);
+    META_MERGE => {
+        resources => {
+            homepage   => 'http://validator.w3.org/',
+            bugtracker => 'http://www.w3.org/Bugs/Public/',
+            repository => 'http://dvcs.w3.org/hg/',
+            MailingList =>
+                'http://lists.w3.org/Archives/Public/www-validator/',
+        },
 
-sub MY::postamble
-{
-    return <<'MAKE_FRAG';
-ChangeLog: README lib/Bundle/W3C/Validator.pm t/00load.t
-	cvs2cl --FSF --utc --prune \
-	  --ignore ChangeLog --ignore cvsignore --ignore SIGNATURE \
-	  --ignore Makefile.PL --ignore META.yml --ignore MANIFEST
-MAKE_FRAG
-}
+    },
+    dist  => {TARFLAGS => '--owner=0 --group=0 -cvf'},
+    clean => {FILES    => 'Makefile.PL.bak lib/Bundle/W3C/Validator.pm.bak'},
+);

@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 use vars qw($VERSION);
-$VERSION = '1.1';
+$VERSION = '1.2';
 
 1;
 
@@ -21,7 +21,7 @@ C<perl -MCPAN -e "install Bundle::W3C::Validator">
 
 =head1 CONTENTS
 
- CGI 2.81
+ CGI 3.40
  CGI::Carp
  Config
  Config::General 2.32
@@ -46,7 +46,7 @@ C<perl -MCPAN -e "install Bundle::W3C::Validator">
  Net::hostent
  SGML::Parser::OpenSP 0.991
  Socket
- URI
+ URI 1.53
  URI::Escape
  URI::file
  URI::Heuristic
@@ -69,7 +69,7 @@ W3C QA-dev Team, E<lt>public-qa-dev@w3.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 1994-2010 World Wide Web Consortium, (Massachusetts
+Copyright (C) 1994-2011 World Wide Web Consortium, (Massachusetts
 Institute of Technology, European Research Consortium for Informatics
 and Mathematics, Keio University). All Rights Reserved. This work is
 distributed under the W3C(R) Software License [1] in the hope that it

@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 use vars qw($VERSION);
-$VERSION = '1.2';
+$VERSION = '1.3';
 
 1;
 
@@ -50,7 +50,7 @@ C<perl -MCPAN -e "install Bundle::W3C::Validator">
  URI::Escape
  URI::file
  URI::Heuristic
- XML::LibXML 1.70
+ XML::LibXML 1.73
 
 =head1 DESCRIPTION
 
@@ -69,7 +69,7 @@ W3C QA-dev Team, E<lt>public-qa-dev@w3.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 1994-2011 World Wide Web Consortium, (Massachusetts
+Copyright (C) 1994-2012 World Wide Web Consortium, (Massachusetts
 Institute of Technology, European Research Consortium for Informatics
 and Mathematics, Keio University). All Rights Reserved. This work is
 distributed under the W3C(R) Software License [1] in the hope that it

@@ -40,7 +40,7 @@ WriteMakefile(
         "URI::Escape"           => 0,
         "URI::file"             => 0,
         "URI::Heuristic"        => 0,
-        "XML::LibXML"           => "1.70",
+        "XML::LibXML"           => 1.73,
 
         # Optional:
         "Encode::JIS2K" => 0,
@@ -50,7 +50,7 @@ WriteMakefile(
         resources => {
             homepage   => 'http://validator.w3.org/',
             bugtracker => 'http://www.w3.org/Bugs/Public/',
-            repository => 'http://dvcs.w3.org/hg/',
+            repository => 'http://dvcs.w3.org/hg/markup-validator/',
             MailingList =>
                 'http://lists.w3.org/Archives/Public/www-validator/',
         },
